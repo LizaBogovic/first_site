@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initially trim the text to 100 characters
     shortTextElement.innerText = trimText(originalText, 100); // макс. кол-во видимых символов при свернутом тексте
 
+
+    
     // Toggle the text between trimmed and full version
     toggleButton.addEventListener('click', function() { //ф-ции кнопки
         console.log("lenght = " +shortTextElement.innerText.length); // свернутый текст
