@@ -1,12 +1,14 @@
 header {
+    background-image: linear-gradient(to right, #ff9966, #ffa2c7); /* Adjust the colors as needed */
+    padding: 0;
+    color: white; /* Set text color to contrast with the gradient */
     text-align: center;
     background-color: rgb(110, 67, 29);
     width: 100%;
     margin: 0;
-    padding: 0;
     box-shadow: 0 10px 10px rgb(255, 0, 0);
-    border-image: linear-gradient(0 5px 5px rgb(255, 247, 162)2), rgb(255, 0, 212) 27;
     border-radius: 25px;
+    
 }
 main {
     background-color: rgb(228, 206, 171);
@@ -26,6 +28,7 @@ body {
 .headerID {
     display:flex;
     justify-content: center;
+    align-items: center;
 }
 
 .card-container {
@@ -59,4 +62,47 @@ body {
 #toggle-button {
     display: inline;
     cursor: pointer;
+}
+
+.comments-container {
+    display: none; /* hide the comments container by default */
+}
+
+.beautiful-button {
+    background-image: linear-gradient(to right, #d1c7fd, #c7d4e5);
+    border: solid;
+    border-color: rgb(150, 234, 220);
+    color: rgb(255, 255, 255); /* White text */
+    padding: 15px; /* Padding */
+    text-align: center; /* Text alignment */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Display as inline-block */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    transition-duration: 0.4s; /* Smooth transition on hover */
+    cursor: pointer; /* Cursor style */
+    border-radius: 8px; /* Rounded corners */
+    width: 100px;
+    height: 40px;
+}
+
+.couzy-button {
+    background-image: linear-gradient( to left, #dd6b1f, rgb(255, 242, 0));
+    border: solid;
+    border-color: #4809ac;
+    color: rgb(50, 19, 206);
+    padding: 15px; /* Padding */
+    text-align: center; /* Text alignment */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Display as inline-block */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    transition-duration: 0.4s; /* Smooth transition on hover */
+    cursor: pointer; /* Cursor style */
+    border-radius: 8px; /* Rounded corners */
+    width: 100px;
+    height: 40px;
+}
+.beautiful-button:hover {
+    background-color: #313431; /* Darker green on hover */
 }

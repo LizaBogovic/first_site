@@ -14,9 +14,9 @@
 
     <header>
         <div class="headerID">
-            <button>Settings</button>
+            <button class="beautiful-button">Settings</button>
             <h1>My SketchesPub</h1>
-            <button>Log In</button>
+            <button class="couzy-button">Log In</button>
         </div>
     </header>
     <main>
@@ -29,12 +29,30 @@
                 <img src="1.jpg" />
                 <div class="card-detail">
                     <h2>Рассвет у морского берега</h2>
-                    <h3 id="short-text">Тут изображен вид утреннего, слегка дикого пляжа. Слева утес, с которого особенно классно наблюдать за утренним морем.Тут изображен вид утреннего, слегка дикого пляжа. Слева утес, с которого особенно классно наблюдать за утренним морем.Тут изображен вид утреннего, слегка дикого пляжа. Слева утес, с которого особенно классно наблюдать за утренним морем.Тут изображен вид утреннего, слегка дикого пляжа. Слева утес, с которого особенно классно наблюдать за утренним морем.</h3>
+                    <h3 id="short-text">Тут изображен вид утреннего, слегка дикого пляжа. Слева утес, с которого
+                        особенно классно наблюдать за утренним морем.Тут изображен вид утреннего, слегка дикого пляжа.
+                        Слева утес, с которого особенно классно наблюдать за утренним морем.Тут изображен вид утреннего,
+                        слегка дикого пляжа. Слева утес, с которого особенно классно наблюдать за утренним морем.Тут
+                        изображен вид утреннего, слегка дикого пляжа. Слева утес, с которого особенно классно наблюдать
+                        за утренним морем.</h3>
                     <button id="toggle-button">подробнее</button>
                     <div class="card-raiting">
                         <h4>#пейзаж, #рассвет, #море</h4>
                         raiting: ★★★★☆
                     </div>
+                    <button id="show-comments-btn" onclick="toggleComments()">Комментарии</button>
+                    <div id="comments-container" class="comments-container">
+                        <div id="comments-card" class="comments-card">
+                            <div id="comments-list" class="comments-list">
+                                <!-- Комментарии будут появляться здесь -->
+                            </div>
+                            <div class="comment-input-container">
+                                <textarea id="comment-input" placeholder="Напишите комментарий..."></textarea>
+                                <button onclick="addComment()">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="card">
@@ -56,4 +74,5 @@
         </div>
     </footer>
 </body>
+
 </html>

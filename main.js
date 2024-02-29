@@ -29,5 +29,27 @@ document.addEventListener('DOMContentLoaded', function() {
             shortTextElement.innerText = trimText(originalText, 100); // Show trimmed text
             toggleButton.innerText = "Больше"; // Reset button text
         }
-    });
+    });    
 });
+
+function toggleComments() {
+    var commentsContainer = document.getElementById('comments-container');
+    console.log("commentsContainer.style.display = " + commentsContainer.style.display);
+    commentsContainer.style.display = (commentsContainer.style.display === 'none' || !commentsContainer.style.display) ? 'block' : 'none';
+}
+
+function addComment() {
+    var commentInput = document.getElementById('comment-input');
+    var commentText = commentInput.value.trim();
+
+    if (commentText !== '') {
+        var commentsList = document.getElementById('comments-list');
+        var commentElement = document.createElement('div');
+        commentElement.classList.add('comment');
+        commentElement.textContent = commentText;
+        commentsList.appendChild(commentElement);
+        commentInput.value = '';
+    } else {
+        alert('Пожалуйста, введите комментарий.');
+    }
+}
